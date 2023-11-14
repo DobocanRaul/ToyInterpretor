@@ -1,0 +1,130 @@
+ExeStack:
+(int  v;(v = 2;print(v)))
+
+SymTable:
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+int  v
+(v = 2;print(v))
+
+SymTable:
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(v = 2;print(v))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+v = 2
+print(v)
+
+SymTable:
+v -> 0
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+print(v)
+
+SymTable:
+v -> 2
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+v -> 2
+
+Out:
+[2]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(int  v;(v = 2;print(v)))
+
+SymTable:
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+int  v
+(v = 2;print(v))
+
+SymTable:
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(v = 2;print(v))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+v = 2
+print(v)
+
+SymTable:
+v -> 0
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+print(v)
+
+SymTable:
+v -> 2
+
+Out:
+[]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+v -> 2
+
+Out:
+[2]
+ Original Program: (int  v;(v = 2;print(v)))
+ ------------------------------------------------------------------------------ 
+

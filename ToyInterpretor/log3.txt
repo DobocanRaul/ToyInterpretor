@@ -1,0 +1,274 @@
+ExeStack:
+(string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+string varf
+(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+
+SymTable:
+varf -> -
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+varf = test.in
+(openRFile(varf);(int  varc;readFile(varf, varc)))
+
+SymTable:
+varf -> -
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(openRFile(varf);(int  varc;readFile(varf, varc)))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+openRFile(varf)
+(int  varc;readFile(varf, varc))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(int  varc;readFile(varf, varc))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+int  varc
+readFile(varf, varc)
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+readFile(varf, varc)
+
+SymTable:
+varc -> 0
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+varc -> test.in
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+string varf
+(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+
+SymTable:
+varf -> -
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+varf = test.in
+(openRFile(varf);(int  varc;readFile(varf, varc)))
+
+SymTable:
+varf -> -
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(openRFile(varf);(int  varc;readFile(varf, varc)))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+openRFile(varf)
+(int  varc;readFile(varf, varc))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(int  varc;readFile(varf, varc))
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+int  varc
+readFile(varf, varc)
+
+SymTable:
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+readFile(varf, varc)
+
+SymTable:
+varc -> 0
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+varc -> 3
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> test.in
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ ------------------------------------------------------------------------------ 
+
