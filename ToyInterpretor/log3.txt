@@ -1,5 +1,5 @@
 ExeStack:
-(string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+(string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
 
 SymTable:
 
@@ -7,12 +7,12 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 string varf
-(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf)))))
 
 SymTable:
 
@@ -20,11 +20,11 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
+(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf)))))
 
 SymTable:
 varf -> -
@@ -33,12 +33,12 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 varf = test.in
-(openRFile(varf);(int  varc;readFile(varf, varc)))
+(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))
 
 SymTable:
 varf -> -
@@ -47,11 +47,11 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(openRFile(varf);(int  varc;readFile(varf, varc)))
+(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))
 
 SymTable:
 varf -> test.in
@@ -60,12 +60,12 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 openRFile(varf)
-(int  varc;readFile(varf, varc))
+(int  varc;(readFile(varf, varc);closeRFile(varf)))
 
 SymTable:
 varf -> test.in
@@ -74,11 +74,11 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(int  varc;readFile(varf, varc))
+(int  varc;(readFile(varf, varc);closeRFile(varf)))
 
 SymTable:
 varf -> test.in
@@ -86,14 +86,14 @@ varf -> test.in
 Out:
 []
 FileTable:
-test.in -> test.in
+test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 int  varc
-readFile(varf, varc)
+(readFile(varf, varc);closeRFile(varf))
 
 SymTable:
 varf -> test.in
@@ -101,13 +101,13 @@ varf -> test.in
 Out:
 []
 FileTable:
-test.in -> test.in
+test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-readFile(varf, varc)
+(readFile(varf, varc);closeRFile(varf))
 
 SymTable:
 varc -> 0
@@ -116,135 +116,14 @@ varf -> test.in
 Out:
 []
 FileTable:
-test.in -> test.in
+test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-
-SymTable:
-varc -> test.in
-varf -> test.in
-
-Out:
-[]
-FileTable:
-test.in -> test.in
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-string varf
-(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc))))
-
-SymTable:
-varf -> -
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-varf = test.in
-(openRFile(varf);(int  varc;readFile(varf, varc)))
-
-SymTable:
-varf -> -
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(openRFile(varf);(int  varc;readFile(varf, varc)))
-
-SymTable:
-varf -> test.in
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-openRFile(varf)
-(int  varc;readFile(varf, varc))
-
-SymTable:
-varf -> test.in
-
-Out:
-[]
-FileTable:
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(int  varc;readFile(varf, varc))
-
-SymTable:
-varf -> test.in
-
-Out:
-[]
-FileTable:
-test.in -> test.in
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-int  varc
-readFile(varf, varc)
-
-SymTable:
-varf -> test.in
-
-Out:
-[]
-FileTable:
-test.in -> test.in
-
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 readFile(varf, varc)
+closeRFile(varf)
 
 SymTable:
 varc -> 0
@@ -253,9 +132,24 @@ varf -> test.in
 Out:
 []
 FileTable:
-test.in -> test.in
+test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+closeRFile(varf)
+
+SymTable:
+varc -> 3
+varf -> test.in
+
+Out:
+[]
+FileTable:
+test.in -> java.io.BufferedReader@2328c243
+
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
@@ -267,8 +161,7 @@ varf -> test.in
 Out:
 []
 FileTable:
-test.in -> test.in
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;readFile(varf, varc)))))
+ Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
  ------------------------------------------------------------------------------ 
 

@@ -4,6 +4,7 @@ import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
 import Types.StringType;
+import Values.StringValue;
 import Values.Value;
 
 public class CloseRFile implements IStmt{
@@ -30,8 +31,8 @@ public class CloseRFile implements IStmt{
             throw new RuntimeException("Expression not evaluated!");
         }
         if(val.getType().equals(new StringType())){
-            if(state.getFileTable().lookup(val.toString())){
-                state.getFileTable().remove(val.toString());
+            if(state.getFileTable().lookup((StringValue) val)){
+                state.getFileTable().remove((StringValue) val);
             }
             else throw new MyException("File not opened!");
         }

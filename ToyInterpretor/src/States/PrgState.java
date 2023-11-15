@@ -4,15 +4,18 @@ import DataStructures.*;
 import Values.*;
 import Statements.*;
 import Exceptions.*;
+
+import java.io.BufferedReader;
+
 public class PrgState {
     MyIStack<IStmt> exeStack;
     MyIDictionary<String, Value> symTable;
 
-    MyIDictionary<String, Value> fileTable;
+    MyIDictionary<StringValue, BufferedReader> fileTable;
     MyIList<Value> out;
     IStmt originalProgram;
 
-    public PrgState( MyIStack<IStmt> stk, MyIDictionary<String,Value> symtbl,MyIDictionary<String,Value> filetbl, MyIList<Value> ot, IStmt prg) {
+    public PrgState( MyIStack<IStmt> stk, MyIDictionary<String,Value> symtbl,MyIDictionary<StringValue,BufferedReader> filetbl, MyIList<Value> ot, IStmt prg) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
@@ -38,7 +41,7 @@ public class PrgState {
         return out;
     }
 
-    public MyIDictionary<String, Value> getFileTable() {
+    public MyIDictionary<StringValue, BufferedReader> getFileTable() {
         return fileTable;
     }
 

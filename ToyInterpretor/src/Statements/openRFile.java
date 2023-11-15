@@ -7,6 +7,9 @@ import Types.StringType;
 import Values.StringValue;
 import Values.Value;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class openRFile implements IStmt{
     Exp exp;
 
@@ -22,11 +25,16 @@ public class openRFile implements IStmt{
         Value id;
         id = exp.eval(state.getSymTable());
         if(id.getType().equals(new StringType())){
-            if(state.getFileTable().lookup(id.toString())){
+            if(state.getFileTable().lookup((StringValue) id)){
                 throw new MyException("File already opened!");
             }
             else{
-                state.getFileTable().add(id.toString(),new StringValue(id.toString()));
+                try{
+                state.getFileTable().add((StringValue) id,new BufferedReader(new FileReader((id.toString()))));
+                }
+                catch (Exception e){
+                    throw new MyException("File not found!");
+                }
             }
         }
         else{

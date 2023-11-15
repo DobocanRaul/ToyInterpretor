@@ -13,6 +13,8 @@ import States.PrgState;
 import Types.*;
 import Values.*;
 
+import java.io.BufferedReader;
+import java.nio.Buffer;
 import java.util.Scanner;
 
 public class Main {
@@ -23,16 +25,16 @@ public class Main {
         MyDictionary<String, Value> symTable = new MyDictionary<>();
         MyDictionary<String, Value> symTable2 = new MyDictionary<>();
         MyDictionary<String, Value> symTable3 = new MyDictionary<>();
-        MyDictionary<String, Value> fileTable=new MyDictionary<>();
-        MyDictionary<String, Value> fileTable2=new MyDictionary<>();
-        MyDictionary<String, Value> fileTable3=new MyDictionary<>();
+        MyDictionary<StringValue, BufferedReader> fileTable=new MyDictionary<>();
+        MyDictionary<StringValue, BufferedReader> fileTable2=new MyDictionary<>();
+        MyDictionary<StringValue, BufferedReader> fileTable3=new MyDictionary<>();
         MyIList<Value> out = new MyList<>();
         MyIList<Value> out2 = new MyList<>();
         MyIList<Value> out3 = new MyList<>();
         IStmt org = new CompStmt(new VarDeclStmt("v", new IntType()), new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))), new PrintStmt(new VarExp("v"))));
         IStmt org2 = new CompStmt(new VarDeclStmt("a", new IntType()), new CompStmt(new VarDeclStmt("b", new IntType()), new CompStmt(new AssignStmt("a", new ArithExp('+', new ValueExp(new IntValue(2)), new ArithExp('*', new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5))))), new CompStmt(new AssignStmt("b", new ArithExp('+', new VarExp("a"), new ValueExp(new IntValue(1)))), new PrintStmt(new VarExp("b"))))));
         ///IStmt org3 = new CompStmt(new VarDeclStmt("a", new BoolType()), new CompStmt(new VarDeclStmt("v", new IntType()), new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(false))), new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v", new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
-        IStmt org3=new CompStmt(new VarDeclStmt("varf",new StringType()),new CompStmt(new AssignStmt("varf",new ValueExp(new StringValue("test.in"))),new CompStmt(new openRFile(new VarExp("varf")),new CompStmt(new VarDeclStmt("varc",new IntType()),new readFile(new VarExp("varf"),"varc")))));
+        IStmt org3=new CompStmt(new VarDeclStmt("varf",new StringType()),new CompStmt(new AssignStmt("varf",new ValueExp(new StringValue("test.in"))),new CompStmt(new openRFile(new VarExp("varf")),new CompStmt(new VarDeclStmt("varc",new IntType()),new CompStmt(new readFile(new VarExp("varf"),"varc"),new CloseRFile(new VarExp("varf")))))));
         PrgState prg = new PrgState(exeStack, symTable,fileTable, out, org);
         PrgState prg2 = new PrgState(exeStack2, symTable2,fileTable2, out2, org2);
         PrgState prg3 = new PrgState(exeStack3, symTable3,fileTable3, out3, org3);

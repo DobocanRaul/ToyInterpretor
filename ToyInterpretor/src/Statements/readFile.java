@@ -36,7 +36,7 @@ public class readFile implements IStmt{
                 Value id=exp.eval(state.getSymTable());
                 if(id.getType().equals(new StringType())){
                     try{
-                        BufferedReader br=new BufferedReader(new FileReader(id.toString()));
+                        BufferedReader br=state.getFileTable().get((StringValue) id);
                         String line;
                         line=br.readLine();
                         int number=Integer.parseInt(line);
