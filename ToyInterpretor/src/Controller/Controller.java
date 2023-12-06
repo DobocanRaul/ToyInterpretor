@@ -3,6 +3,14 @@ package Controller;
 import Exceptions.MyException;
 import States.PrgState;
 import Repository.IRepository;
+import Values.RefValue;
+import Values.Value;
+
+import java.util.Map;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Controller {
     private IRepository repo;
     private PrgState Currentstate;
@@ -39,6 +47,24 @@ public class Controller {
         Currentstate.oneStep();
     }
 
+    List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
+        return symTableValues.stream()
+                .filter(v-> v instanceof RefValue)
+                .map(v-> {RefValue v1 = (RefValue)v; return v1.getAddress();})
+                .collect(Collectors.toList());
+    }
+
+    List<Integer> getAddrFromHeap(Collection<Value> heapValues){
+        return heapValues.stream()
+                .filter(v-> v instanceof RefValue)
+                .map(v-> {RefValue v1 = (RefValue)v; return v1.getAddress();})
+                .collect(Collectors.toList());
+    }
+    Map<Integer,Value> safeGarbageCollector(List<Integer> symTableAddr,Collection<Value> heapAddr, Map<Integer,Value> heap){
+        return heap.entrySet().stream()
+                .filter(e-> symTableAddr.contains(e.getKey())|| heapAddr.contains(e.getKey()))
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
     public void allStep(){
         if (alreadyExecuted==0){
 
@@ -54,6 +80,9 @@ public class Controller {
         }
         while(Currentstate.getStk().isEmpty()==false){
             oneStep();
+            Currentstate.getHeap().setContent(safeGarbageCollector(
+                    getAddrFromSymTable(Currentstate.getSymTable().getContent()),Currentstate.getHeap().getContent().values(),
+                    Currentstate.getHeap().getContent()));
             try {
                 repo.logPrgStateExec();
             } catch (MyException e) {

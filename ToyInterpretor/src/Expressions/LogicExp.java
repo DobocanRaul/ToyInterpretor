@@ -1,5 +1,6 @@
 package Expressions;
 
+import DataStructures.MyHeap;
 import DataStructures.MyIDictionary;
 import Exceptions.MyException;
 import Values.Value;
@@ -22,11 +23,11 @@ public class LogicExp implements Exp{
             return e1.toString() + " || " + e2.toString();
     }
 
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException{
+    public Value eval(MyIDictionary<String, Value> tbl, MyHeap hp) throws MyException{
         Value v1,v2;
-        v1= e1.eval(tbl);
+        v1= e1.eval(tbl,hp);
         if(v1.getType().equals(new BoolType())){
-            v2 = e2.eval(tbl);
+            v2 = e2.eval(tbl,hp);
             if(v2.getType().equals(new BoolType())){
                 Values.BoolValue b1 = (Values.BoolValue)v1;
                 Values.BoolValue b2 = (Values.BoolValue)v2;

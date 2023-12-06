@@ -1,10 +1,9 @@
 package DataStructures;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
+import java.util.*;
 
 public class MyDictionary<K,V> implements MyIDictionary<K, V>{
-    Hashtable<K, V> dict;
+    Map<K, V> dict;
 
     public MyDictionary(){
         this.dict = new Hashtable<K, V>();
@@ -26,7 +25,9 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V>{
     public V get(K key){
         return dict.get(key);
     }
-
+    public void update(K key, V val){
+        dict.replace(key, val);
+    }
     public void add(K key, V val){
         dict.put(key, val);
     }
@@ -37,5 +38,9 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V>{
             str += key.toString() + " -> " + dict.get(key).toString() + "\n";
         }
         return str;
+    }
+
+    public Collection<V> getContent(){
+        return dict.values();
     }
 }

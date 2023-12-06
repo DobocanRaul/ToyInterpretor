@@ -33,7 +33,7 @@ public class readFile implements IStmt{
         if(state.getSymTable().lookup(var_name))
         {
             if(state.getSymTable().get(var_name).getType().equals(new IntType())){
-                Value id=exp.eval(state.getSymTable());
+                Value id=exp.eval(state.getSymTable(),state.getHeap());
                 if(id.getType().equals(new StringType())){
                     try{
                         BufferedReader br=state.getFileTable().get((StringValue) id);

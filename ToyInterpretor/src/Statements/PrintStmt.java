@@ -18,7 +18,7 @@ public class PrintStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
-        out.add(exp.eval(symTbl));
+        out.add(exp.eval(symTbl,state.getHeap()));
         return state;
     }
 

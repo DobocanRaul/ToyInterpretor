@@ -23,7 +23,7 @@ public class openRFile implements IStmt{
 
     public PrgState execute(PrgState state) throws MyException{
         Value id;
-        id = exp.eval(state.getSymTable());
+        id = exp.eval(state.getSymTable(),state.getHeap());
         if(id.getType().equals(new StringType())){
             if(state.getFileTable().lookup((StringValue) id)){
                 throw new MyException("File already opened!");

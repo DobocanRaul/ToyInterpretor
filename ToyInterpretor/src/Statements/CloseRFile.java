@@ -25,7 +25,7 @@ public class CloseRFile implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         Value val;
         try{
-            val=exp.eval(state.getSymTable());
+            val=exp.eval(state.getSymTable(),state.getHeap());
         }
         catch (Exception e){
             throw new RuntimeException("Expression not evaluated!");

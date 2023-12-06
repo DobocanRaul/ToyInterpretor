@@ -1,5 +1,5 @@
 ExeStack:
-(string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+(int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
 
 SymTable:
 
@@ -7,12 +7,14 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-string varf
-(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf)))))
+int  a
+(a = 5;while((a>2)) (print(a);a = a - 1))
 
 SymTable:
 
@@ -20,148 +22,260 @@ Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf)))))
+(a = 5;while((a>2)) (print(a);a = a - 1))
 
 SymTable:
-varf -> -
+a -> 0
 
 Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-varf = test.in
-(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))
+a = 5
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varf -> -
+a -> 0
 
 Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varf -> test.in
+a -> 5
 
 Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-openRFile(varf)
-(int  varc;(readFile(varf, varc);closeRFile(varf)))
+(print(a);a = a - 1)
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varf -> test.in
+a -> 5
 
 Out:
 []
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(int  varc;(readFile(varf, varc);closeRFile(varf)))
+print(a)
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varf -> test.in
+a -> 5
 
 Out:
 []
 FileTable:
-test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-int  varc
-(readFile(varf, varc);closeRFile(varf))
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varf -> test.in
+a -> 5
 
 Out:
-[]
+[5]
 FileTable:
-test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-(readFile(varf, varc);closeRFile(varf))
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varc -> 0
-varf -> test.in
+a -> 4
 
 Out:
-[]
+[5]
 FileTable:
-test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-readFile(varf, varc)
-closeRFile(varf)
+(print(a);a = a - 1)
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varc -> 0
-varf -> test.in
+a -> 4
 
 Out:
-[]
+[5]
 FileTable:
-test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
-closeRFile(varf)
+print(a)
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
 
 SymTable:
-varc -> 3
-varf -> test.in
+a -> 4
 
 Out:
-[]
+[5]
 FileTable:
-test.in -> java.io.BufferedReader@2328c243
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 4
+
+Out:
+[5, 4]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 3
+
+Out:
+[5, 4]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(print(a);a = a - 1)
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 3
+
+Out:
+[5, 4]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+print(a)
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 3
+
+Out:
+[5, 4]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+a = a - 1
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 3
+
+Out:
+[5, 4, 3]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+while((a>2)) (print(a);a = a - 1)
+
+SymTable:
+a -> 2
+
+Out:
+[5, 4, 3]
+FileTable:
+
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
 ExeStack:
 
 SymTable:
-varc -> 3
-varf -> test.in
+a -> 2
 
 Out:
-[]
+[5, 4, 3]
 FileTable:
 
- Original Program: (string varf;(varf = test.in;(openRFile(varf);(int  varc;(readFile(varf, varc);closeRFile(varf))))))
+Heap:
+
+ Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 

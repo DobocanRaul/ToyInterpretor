@@ -21,7 +21,7 @@ public class AssignStmt implements IStmt {
         MyIStack<IStmt> stk = state.getStk();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         if (symTbl.lookup(id)== true ) {
-            Value val = exp.eval(symTbl);
+            Value val = exp.eval(symTbl, state.getHeap());
             Type typId = (symTbl.get(id)).getType();
             if (val.getType().equals(typId))
                 symTbl.add(id, val);
