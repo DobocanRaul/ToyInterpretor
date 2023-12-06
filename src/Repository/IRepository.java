@@ -1,5 +1,6 @@
 package Repository;
 
+import Exceptions.MyException;
 import States.PrgState;
 
 public interface IRepository {
@@ -7,4 +8,5 @@ public interface IRepository {
     public void remove(int index);
     public PrgState get(int index);
     public int size();
+    public void logPrgStateExec() throws MyException;
 }

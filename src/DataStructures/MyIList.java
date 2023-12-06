@@ -6,4 +6,5 @@ public interface MyIList <T>{
     public int size();
     public String toString();
     public void clear();
+    public boolean includes(T val);
 }

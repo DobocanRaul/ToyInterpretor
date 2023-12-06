@@ -21,7 +21,13 @@ public class MyStack<T> implements MyIStack<T>{
         return stack.isEmpty();
     }
 
+    @Override
     public String toString() {
-        return stack.toString();
+        String str = "";
+        ///do it inverse
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            str += stack.get(i).toString() + "\n";
+        }
+        return str;
     }
 }

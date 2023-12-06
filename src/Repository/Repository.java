@@ -1,12 +1,15 @@
 package Repository;
 
+import Exceptions.MyException;
 import States.PrgState;
-
+import java.io.*;
 public class Repository implements IRepository{
     private PrgState[] states;
+    private String logFilePath;
     private int size;
 
-    public Repository() {
+    public Repository(String FilePath) {
+        logFilePath = FilePath;
         states = new PrgState[100];
         size = 0;
     }
@@ -27,5 +30,18 @@ public class Repository implements IRepository{
 
     public int size() {
         return size;
+    }
+
+    public void logPrgStateExec() throws MyException {
+        try {
+            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+            ///clear the log file
+            logFile.print("");
+            logFile.println(states[0].toString());
+            logFile.close();
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
+
+        }
     }
 }

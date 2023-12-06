@@ -1,5 +1,6 @@
 package Expressions;
 
+import DataStructures.MyHeap;
 import Types.IntType;
 import Values.IntValue;
 import Values.Value;
@@ -24,13 +25,13 @@ public class ArithExp implements Exp{
         this.op = op;
     }
 
-    public Value eval(MyIDictionary<String,Value> tbl) throws MyException
+    public Value eval(MyIDictionary<String,Value> tbl, MyHeap hp) throws MyException
     {
         Value v1,v2;
-        v1= e1.eval(tbl);
+        v1= e1.eval(tbl,hp);
         if(v1.getType().equals(new IntType()))
         {
-            v2 = e2.eval(tbl);
+            v2 = e2.eval(tbl,hp);
             if(v2.getType().equals(new IntType()))
             {
                 IntValue i1 = (IntValue)v1;

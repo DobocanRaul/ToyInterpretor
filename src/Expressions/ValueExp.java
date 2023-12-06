@@ -1,5 +1,6 @@
 package Expressions;
 
+import DataStructures.MyHeap;
 import Values.Value;
 import Exceptions.MyException;
 import DataStructures.MyIDictionary;
@@ -10,7 +11,7 @@ public class ValueExp implements Exp{
     {
         this.val = val;
     }
-    public Value eval(MyIDictionary<String,Value> tbl) throws MyException
+    public Value eval(MyIDictionary<String,Value> tbl, MyHeap hp) throws MyException
     {
         return val;
     }

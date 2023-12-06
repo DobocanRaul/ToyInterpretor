@@ -27,4 +27,8 @@ public class MyList<T> implements MyIList<T>{
     public String toString(){
         return list.toString();
     }
+
+    public boolean includes(T val){
+        return list.contains(val);
+    }
 }
