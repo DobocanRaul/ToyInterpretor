@@ -2,6 +2,7 @@ package DataStructures;
 
 import Values.Value;
 
+import java.util.Collection;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -57,5 +58,10 @@ public class MyHeap {
 
     public Map<Integer, Value> getContent(){
         return Heap;
+    }
+
+    public Collection<Value> getValues(){
+        //Return all the values from the heap without the keys
+        return Heap.values();
     }
 }

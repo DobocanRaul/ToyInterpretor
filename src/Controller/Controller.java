@@ -60,9 +60,9 @@ public class Controller {
                 .map(v-> {RefValue v1 = (RefValue)v; return v1.getAddress();})
                 .collect(Collectors.toList());
     }
-    Map<Integer,Value> safeGarbageCollector(List<Integer> symTableAddr,Collection<Value> heapAddr, Map<Integer,Value> heap){
+    Map<Integer,Value> safeGarbageCollector(List<Integer> symTableAddr,List<Integer> heapAddr, Map<Integer,Value> heap){
         return heap.entrySet().stream()
-                .filter(e-> symTableAddr.contains(e.getKey())|| heapAddr.contains(e.getKey()))
+                .filter(e-> (symTableAddr.contains(e.getKey())|| heapAddr.contains(e.getKey())))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
     public void allStep(){
@@ -81,7 +81,7 @@ public class Controller {
         while(Currentstate.getStk().isEmpty()==false){
             oneStep();
             Currentstate.getHeap().setContent(safeGarbageCollector(
-                    getAddrFromSymTable(Currentstate.getSymTable().getContent()),Currentstate.getHeap().getContent().values(),
+                    getAddrFromSymTable(Currentstate.getSymTable().getContent()),getAddrFromHeap(Currentstate.getHeap().getValues()),
                     Currentstate.getHeap().getContent()));
             try {
                 repo.logPrgStateExec();
