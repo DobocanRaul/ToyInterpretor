@@ -42,6 +42,7 @@ public class Main {
         IStmt org2 =new CompStmt(new VarDeclStmt("a",new RefType(new IntType())),new CompStmt(new NewStmt("a",new ValueExp(new IntValue(20))),new CompStmt(new PrintStmt(new ReadHeap(new VarExp("a"))),new CompStmt(new WriteHeap("a",new ValueExp(new IntValue(30))),new PrintStmt(new ReadHeap(new VarExp("a")))))));
         IStmt org3=new CompStmt(new VarDeclStmt("a",new IntType()),new CompStmt(new AssignStmt("a",new ValueExp(new IntValue(5))),new WhileStmt(new RelationalExp(new VarExp("a"),new ValueExp(new IntValue(2)),">"),new CompStmt(new PrintStmt(new VarExp("a")),new AssignStmt("a",new ArithExp('-',new VarExp("a"),new ValueExp(new IntValue(1))))))));
         IStmt org4=new CompStmt(new VarDeclStmt("v",new RefType((new IntType()))),new CompStmt(new NewStmt("v",new ValueExp(new IntValue(20))),new CompStmt(new VarDeclStmt("a",new RefType(new RefType(new IntType()))),new CompStmt(new NewStmt("a",new VarExp("v")),new CompStmt(new NewStmt("v",new ValueExp(new IntValue(30))),new PrintStmt(new ReadHeap(new ReadHeap(new VarExp("a")))))))));
+        //Test daca e master
         PrgState prg = new PrgState(exeStack, symTable,fileTable, out, org,heap);
         PrgState prg2 = new PrgState(exeStack2, symTable2,fileTable2, out2, org2,heap2);
         PrgState prg3 = new PrgState(exeStack3, symTable3,fileTable3, out3, org3,heap3);
