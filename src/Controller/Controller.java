@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class Controller {
@@ -109,6 +110,17 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    //Ai ramas la 15 de la controller class
+    public void allStep() throws MyException{
+        executor= Executors.newFixedThreadPool(2);
+        List<PrgState> prgList=removeCompletedPrg(repo.getPrgList());
+        while(prgList.size()>0){
+            //garbage collector
+            OneStepForAllPrg(prgList);
+            prgList=removeCompletedPrg(repo.getPrgList());
+        }
+        executor.shutdownNow();
+        repo.setPrgList(prgList);
+
+    }
 
 }

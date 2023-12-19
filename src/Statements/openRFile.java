@@ -41,7 +41,7 @@ public class openRFile implements IStmt{
             throw new MyException("Expression is not a string!");
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy(){

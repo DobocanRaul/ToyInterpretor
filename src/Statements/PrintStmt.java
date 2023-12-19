@@ -19,7 +19,7 @@ public class PrintStmt implements IStmt {
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         out.add(exp.eval(symTbl,state.getHeap()));
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

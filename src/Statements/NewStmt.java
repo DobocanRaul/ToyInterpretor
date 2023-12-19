@@ -55,9 +55,8 @@ public class NewStmt implements IStmt{
         else
         {
             System.out.println("Variable not declared!");
-            return state;
         }
-        return state;
+        return null;
     }
 
     public IStmt deepCopy(){

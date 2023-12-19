@@ -32,7 +32,7 @@ public class WriteHeap implements IStmt{
                     catch (Exception e)
                     {
                         System.out.println(e.toString());
-                        return state;
+                        return null;
                     }
                     if(((RefValue) val).getLocationType().equals(val2.getType()))
                     {
@@ -52,7 +52,6 @@ public class WriteHeap implements IStmt{
             else
             {
                 System.out.println("Type not RefType!");
-                return state;
             }
         }
         else
@@ -60,7 +59,7 @@ public class WriteHeap implements IStmt{
             System.out.println("Variable not declared!");
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy(){

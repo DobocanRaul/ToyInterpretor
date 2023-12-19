@@ -55,7 +55,7 @@ public class readFile implements IStmt{
         else{
                 throw new MyException ("Variable not defined!");
         }
-        return state;
+        return null;
     }
 
 }

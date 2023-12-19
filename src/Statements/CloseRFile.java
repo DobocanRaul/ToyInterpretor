@@ -37,6 +37,6 @@ public class CloseRFile implements IStmt{
             else throw new MyException("File not opened!");
         }
         else throw new MyException("Expression not evaluated to string!");
-        return state;
+        return null;
     }
 }

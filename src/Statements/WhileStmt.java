@@ -41,7 +41,7 @@ public class WhileStmt implements IStmt{
         {
             System.out.println("Condition does not evaluate to boolean!");
         }
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

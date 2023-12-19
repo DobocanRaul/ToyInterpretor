@@ -7,7 +7,7 @@ public class NOPStmt implements IStmt{
     }
 
     public PrgState execute(PrgState state) {
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

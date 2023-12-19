@@ -3,6 +3,7 @@ package Repository;
 import Exceptions.MyException;
 import States.PrgState;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Repository implements IRepository{
@@ -11,6 +12,7 @@ public class Repository implements IRepository{
     private int size;
 
     public Repository(String FilePath) {
+        states=new ArrayList<PrgState>();
         logFilePath = FilePath;
         size = 0;
     }

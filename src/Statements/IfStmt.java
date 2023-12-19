@@ -30,7 +30,7 @@ public class IfStmt implements IStmt {
             else
                 state.getStk().push(elseS);
         } else throw new MyException("Conditional expression is not a boolean");
-        return state;
+        return null;
 
     }
 
