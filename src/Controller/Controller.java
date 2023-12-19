@@ -9,12 +9,14 @@ import Values.Value;
 import java.util.Map;
 import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
 import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repo;
     private PrgState Currentstate;
-
+    private ExecutorService executor;
     //if flag is 0 then it won't print the state's info
     //if flag is 1 then it will print the state's info
     private int showFlag=1;
@@ -43,9 +45,6 @@ public class Controller {
         return repo.size();
     }
 
-    public void oneStep(){
-        Currentstate.oneStep();
-    }
 
     List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
         return symTableValues.stream()
@@ -65,30 +64,51 @@ public class Controller {
                 .filter(e-> (symTableAddr.contains(e.getKey())|| heapAddr.contains(e.getKey())))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
-    public void allStep(){
-        if (alreadyExecuted==0){
-
-            alreadyExecuted=1;
-        }
-        else {
-            Currentstate.clean();
-        }
+    public void OneStepForAllPrg(List<PrgState> prgList){
+            prgList.forEach(prg-> {
+                try {
+                    repo.logPrgStateExec(prg);
+                } catch (MyException e) {
+                    e.printStackTrace();
+                }
+            });
+        List<Callable<PrgState>> callList = prgList.stream()
+                .map((PrgState p) -> (Callable<PrgState>)(() -> {return p.oneStep();}))
+                .collect(Collectors.toList());
+        List<PrgState> newPrgList = null;
         try {
-            repo.logPrgStateExec();
-        } catch (MyException e) {
-            System.out.println(e.toString());
+            newPrgList = executor.invokeAll(callList).stream()
+                    .map(future -> {
+                        try {
+                            return future.get();
+                        } catch (Exception e) {
+                            System.out.println(e.getMessage());
+                        }
+                        return null;
+                    })
+                    .filter(p -> p != null)
+                    .collect(Collectors.toList());
         }
-        while(Currentstate.getStk().isEmpty()==false){
-            oneStep();
-            Currentstate.getHeap().setContent(safeGarbageCollector(
-                    getAddrFromSymTable(Currentstate.getSymTable().getContent()),getAddrFromHeap(Currentstate.getHeap().getValues()),
-                    Currentstate.getHeap().getContent()));
+        catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
+        prgList.addAll(newPrgList);
+        prgList.forEach(prg-> {
             try {
-                repo.logPrgStateExec();
+                repo.logPrgStateExec(prg);
             } catch (MyException e) {
-                System.out.println(e.toString());
+                e.printStackTrace();
             }
-        }
-        System.out.println(Currentstate.getOut().toString());
+        });
+        repo.setPrgList(prgList);
+
     }
+    public List<PrgState> removeCompletedPrg(List<PrgState> inPrgList){
+        return inPrgList.stream()
+                .filter(p->p.isNotCompleted())
+                .collect(Collectors.toList());
+    }
+
+    //Ai ramas la 15 de la controller class
+
 }

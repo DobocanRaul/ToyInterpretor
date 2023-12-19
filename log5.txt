@@ -1,0 +1,182 @@
+ExeStack:
+(Ref(int ) a;(new(a,5);new(a,6)))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+Ref(int ) a
+(new(a,5);new(a,6))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(new(a,5);new(a,6))
+
+SymTable:
+a -> (0,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+new(a,5)
+new(a,6)
+
+SymTable:
+a -> (0,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+new(a,6)
+
+SymTable:
+a -> (1,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 5
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+a -> (2,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+2 -> 6
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(Ref(int ) a;(new(a,5);new(a,6)))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+Ref(int ) a
+(new(a,5);new(a,6))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+(new(a,5);new(a,6))
+
+SymTable:
+a -> (0,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+new(a,5)
+new(a,6)
+
+SymTable:
+a -> (0,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+new(a,6)
+
+SymTable:
+a -> (1,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 5
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+
+ExeStack:
+
+SymTable:
+a -> (2,int )
+
+Out:
+[]
+FileTable:
+
+Heap:
+2 -> 6
+
+ Original Program: (Ref(int ) a;(new(a,5);new(a,6)))
+ ------------------------------------------------------------------------------ 
+

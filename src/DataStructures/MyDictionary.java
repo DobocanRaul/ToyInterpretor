@@ -43,4 +43,12 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V>{
     public Collection<V> getContent(){
         return dict.values();
     }
+
+    public MyDictionary deepcopy(){
+        MyDictionary<K,V> newDict = new MyDictionary<K,V>();
+        for(K key : dict.keySet()){
+            newDict.add(key, dict.get(key));
+        }
+        return newDict;
+    }
 }

@@ -14,8 +14,9 @@ public class PrgState {
     MyIDictionary<StringValue, BufferedReader> fileTable;
     MyIList<Value> out;
     IStmt originalProgram;
+    int id;
 
-    public PrgState( MyIStack<IStmt> stk, MyIDictionary<String,Value> symtbl,MyIDictionary<StringValue,BufferedReader> filetbl, MyIList<Value> ot, IStmt prg,MyHeap hp) {
+    public PrgState( MyIStack<IStmt> stk, MyIDictionary<String,Value> symtbl,MyIDictionary<StringValue,BufferedReader> filetbl, MyIList<Value> ot, IStmt prg,MyHeap hp,int idadder) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
@@ -23,6 +24,7 @@ public class PrgState {
         fileTable=filetbl;
         originalProgram = prg;
         stk.push(prg.deepCopy());
+        id=idadder++;
     }
     public void clean(){
         exeStack.clear();
@@ -49,19 +51,22 @@ public class PrgState {
     }
 
     public String toString() {
-        return "ExeStack:\n" + exeStack.toString() + "\nSymTable:\n" + symTable.toString() + "\nOut:\n" + out.toString() +"\nFileTable:\n"+fileTable.toString()+"\nHeap:\n"+Heap.toString() +"\n Original Program: " + originalProgram.toString() + "\n ------------------------------------------------------------------------------ \n";
+        return "PrgState with id: "+id+"\nExeStack:\n" + exeStack.toString() + "\nSymTable:\n" + symTable.toString() + "\nOut:\n" + out.toString() +"\nFileTable:\n"+fileTable.toString()+"\nHeap:\n"+Heap.toString() +"\n Original Program: " + originalProgram.toString() + "\n ------------------------------------------------------------------------------ \n";
     }
 
-    public void oneStep(){
-        if(!exeStack.isEmpty()) {
+    public boolean isNotCompleted() {
+        return !exeStack.isEmpty();
+    }
+
+    public PrgState oneStep() throws MyException{
+        if(exeStack.isEmpty())
+            throw new MyException("prgstate stack is empty");
         IStmt crtStmt = exeStack.pop();
-        try {
-            crtStmt.execute(this);
-        } catch (MyException e) {
-            System.out.println(e.toString());
-            }
-        }
+        return crtStmt.execute(this);
     }
 
+    public int getId(){
+        return id;
+    }
 
 }
