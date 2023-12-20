@@ -40,8 +40,8 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V>{
         return str;
     }
 
-    public Collection<V> getContent(){
-        return dict.values();
+    public Map<K,V> getContent(){
+        return dict;
     }
 
     public MyDictionary deepcopy(){

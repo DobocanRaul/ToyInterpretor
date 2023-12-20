@@ -13,6 +13,6 @@ public interface MyIDictionary <K, V>{
         public void remove(K key);
         public String toString();
         public void clear();
-        public Collection<V> getContent();
+        public Map<K,V> getContent();
         public MyIDictionary<K,V> deepcopy();
 }

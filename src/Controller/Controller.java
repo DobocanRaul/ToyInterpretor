@@ -1,11 +1,13 @@
 package Controller;
 
+import DataStructures.MyDictionary;
 import Exceptions.MyException;
 import States.PrgState;
 import Repository.IRepository;
 import Values.RefValue;
 import Values.Value;
 
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Collection;
 import java.util.List;
@@ -46,7 +48,16 @@ public class Controller {
         return repo.size();
     }
 
-
+    ///Get the addresses from all the RefValues from the SymTables
+    List<Value> getSymTableValues(){
+        //All the SymTables from the PrgStates
+        List<Value> symTable = new ArrayList<>();
+        for (PrgState p:repo.getPrgList()) {
+            for(Value v:p.getSymTable().getContent().values())
+                symTable.add(v);
+        }
+        return symTable;
+    }
     List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
         return symTableValues.stream()
                 .filter(v-> v instanceof RefValue)
@@ -114,7 +125,7 @@ public class Controller {
         executor= Executors.newFixedThreadPool(2);
         List<PrgState> prgList=removeCompletedPrg(repo.getPrgList());
         while(prgList.size()>0){
-            //garbage collector
+            safeGarbageCollector(getAddrFromSymTable(getSymTableValues()),getAddrFromHeap(getSymTableValues()),Currentstate.getHeap().getContent());
             OneStepForAllPrg(prgList);
             prgList=removeCompletedPrg(repo.getPrgList());
         }
