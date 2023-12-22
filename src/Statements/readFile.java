@@ -1,5 +1,6 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
 import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
@@ -56,6 +57,14 @@ public class readFile implements IStmt{
                 throw new MyException ("Variable not defined!");
         }
         return null;
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typ = exp.typecheck(typeEnv);
+        if(typ.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("ReadFile: exp is not a string!");
     }
 
 }

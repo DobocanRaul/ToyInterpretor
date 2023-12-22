@@ -1,933 +1,9 @@
 PrgState with id: 1
 ExeStack:
-(int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-int  v
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-int  v
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))))
-
-SymTable:
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))))
-
-SymTable:
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-Ref(int ) a
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))
-
-SymTable:
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-Ref(int ) a
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))
-
-SymTable:
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-v = 10
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-v = 10
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v))))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-new(a,22)
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-new(a,22)
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-fork((wH(a,30);(v = 32;(print(v);print(rH(a))))))
-(print(v);(print(rH(a));(print(v);print(v))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-fork((wH(a,30);(v = 32;(print(v);print(rH(a))))))
-(print(v);(print(rH(a));(print(v);print(v))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(v);(print(rH(a));(print(v);print(v))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(wH(a,30);(v = 32;(print(v);print(rH(a)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(v);(print(rH(a));(print(v);print(v))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(wH(a,30);(v = 32;(print(v);print(rH(a)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-(print(rH(a));(print(v);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-wH(a,30)
-(v = 32;(print(v);print(rH(a))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-(print(rH(a));(print(v);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-wH(a,30)
-(v = 32;(print(v);print(rH(a))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(rH(a));(print(v);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(v = 32;(print(v);print(rH(a))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(rH(a));(print(v);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(v = 32;(print(v);print(rH(a))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(rH(a))
-(print(v);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-v = 32
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(rH(a))
-(print(v);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-v = 32
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(v);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(v);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-print(v)
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-print(v)
-print(rH(a))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-print(v)
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-print(v)
-print(rH(a))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30, 10, 32]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-print(rH(a))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30, 10, 32]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30, 10, 32]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-print(rH(a))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30, 10, 32]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30, 10, 32, 10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(print(v);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30, 10, 32, 10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
 int  v
 (Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
 
 SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-int  v
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
-
-SymTable:
-v -> 0
 
 Out:
 []
@@ -973,59 +49,7 @@ Heap:
 
 PrgState with id: 1
 ExeStack:
-Ref(int ) a
 (v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
-
-SymTable:
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
-
-SymTable:
-a -> (0,int )
-v -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-v = 10
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
 
 SymTable:
 a -> (0,int )
@@ -1077,41 +101,6 @@ Heap:
 
 PrgState with id: 1
 ExeStack:
-(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-new(a,22)
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
-
-SymTable:
-a -> (0,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
 new(a,22)
 (fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
 
@@ -1131,43 +120,6 @@ Heap:
 PrgState with id: 1
 ExeStack:
 (fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-fork((wH(a,30);(v = 32;(print(v);print(rH(a))))))
-(print(v);(print(rH(a));(new(a,23);print(v))))
 
 SymTable:
 a -> (1,int )
@@ -1223,80 +175,6 @@ Heap:
 PrgState with id: 2
 ExeStack:
 (wH(a,30);(v = 32;(print(v);print(rH(a)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(print(v);(print(rH(a));(new(a,23);print(v))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(wH(a,30);(v = 32;(print(v);print(rH(a)))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(v)
-(print(rH(a));(new(a,23);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[]
-FileTable:
-
-Heap:
-1 -> 22
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-wH(a,30)
-(v = 32;(print(v);print(rH(a))))
 
 SymTable:
 a -> (1,int )
@@ -1388,80 +266,6 @@ Heap:
 
 PrgState with id: 1
 ExeStack:
-(print(rH(a));(new(a,23);print(v)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(v = 32;(print(v);print(rH(a))))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-print(rH(a))
-(new(a,23);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-v = 32
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
 print(rH(a))
 (new(a,23);print(v))
 
@@ -1519,80 +323,6 @@ Heap:
 PrgState with id: 2
 ExeStack:
 (print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-(new(a,23);print(v))
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-(print(v);print(rH(a)))
-
-SymTable:
-a -> (1,int )
-v -> 32
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 1
-ExeStack:
-new(a,23)
-print(v)
-
-SymTable:
-a -> (1,int )
-v -> 10
-
-Out:
-[10, 30]
-FileTable:
-
-Heap:
-1 -> 30
-
- Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
- ------------------------------------------------------------------------------ 
-
-PrgState with id: 2
-ExeStack:
-print(v)
-print(rH(a))
 
 SymTable:
 a -> (1,int )
@@ -1679,6 +409,872 @@ FileTable:
 
 Heap:
 2 -> 23
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+
+SymTable:
+a -> (2,int )
+v -> 10
+
+Out:
+[10, 30, 32, 10, 30]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30, 32, 10, 30]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+int  v
+(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+Ref(int ) a
+(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
+
+SymTable:
+a -> (0,int )
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+v = 10
+(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
+
+SymTable:
+a -> (0,int )
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
+
+SymTable:
+a -> (0,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+new(a,22)
+(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
+
+SymTable:
+a -> (0,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+fork((wH(a,30);(v = 32;(print(v);print(rH(a))))))
+(print(v);(print(rH(a));(new(a,23);print(v))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(print(v);(print(rH(a));(new(a,23);print(v))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(wH(a,30);(v = 32;(print(v);print(rH(a)))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+print(v)
+(print(rH(a));(new(a,23);print(v)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+wH(a,30)
+(v = 32;(print(v);print(rH(a))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(print(rH(a));(new(a,23);print(v)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(v = 32;(print(v);print(rH(a))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+print(rH(a))
+(new(a,23);print(v))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+v = 32
+(print(v);print(rH(a)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(new(a,23);print(v))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(print(v);print(rH(a)))
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+new(a,23)
+print(v)
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+print(v)
+
+SymTable:
+a -> (2,int )
+v -> 10
+
+Out:
+[10, 30, 32]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+print(rH(a))
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30, 32]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+
+SymTable:
+a -> (2,int )
+v -> 10
+
+Out:
+[10, 30, 32, 10, 30]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30, 32, 10, 30]
+FileTable:
+
+Heap:
+2 -> 23
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+int  v
+(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
+
+SymTable:
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+Ref(int ) a
+(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
+
+SymTable:
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))
+
+SymTable:
+a -> (0,int )
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+v = 10
+(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
+
+SymTable:
+a -> (0,int )
+v -> 0
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v))))))
+
+SymTable:
+a -> (0,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+new(a,22)
+(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
+
+SymTable:
+a -> (0,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+fork((wH(a,30);(v = 32;(print(v);print(rH(a))))))
+(print(v);(print(rH(a));(new(a,23);print(v))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(print(v);(print(rH(a));(new(a,23);print(v))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(wH(a,30);(v = 32;(print(v);print(rH(a)))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+print(v)
+(print(rH(a));(new(a,23);print(v)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+wH(a,30)
+(v = 32;(print(v);print(rH(a))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[]
+FileTable:
+
+Heap:
+1 -> 22
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(print(rH(a));(new(a,23);print(v)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(v = 32;(print(v);print(rH(a))))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+print(rH(a))
+(new(a,23);print(v))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+v = 32
+(print(v);print(rH(a)))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+(new(a,23);print(v))
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+(print(v);print(rH(a)))
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 1
+ExeStack:
+new(a,23)
+print(v)
+
+SymTable:
+a -> (1,int )
+v -> 10
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
+1 -> 30
+
+ Original Program: (int  v;(Ref(int ) a;(v = 10;(new(a,22);(fork((wH(a,30);(v = 32;(print(v);print(rH(a))))));(print(v);(print(rH(a));(new(a,23);print(v)))))))))
+ ------------------------------------------------------------------------------ 
+
+PrgState with id: 2
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a -> (1,int )
+v -> 32
+
+Out:
+[10, 30]
+FileTable:
+
+Heap:
 1 -> 30
 
  Original Program: (wH(a,30);(v = 32;(print(v);print(rH(a)))))

@@ -5,6 +5,7 @@ import States.PrgState;
 import Exceptions.*;
 import Expressions.Exp;
 import Values.Value;
+import Types.Type;
 public class PrintStmt implements IStmt {
     Exp exp;
 
@@ -24,5 +25,10 @@ public class PrintStmt implements IStmt {
 
     public IStmt deepCopy() {
         return new PrintStmt(exp.deepcopy());
+    }
+
+    public MyIDictionary<String,Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
 }

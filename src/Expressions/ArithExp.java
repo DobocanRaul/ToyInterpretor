@@ -2,6 +2,7 @@ package Expressions;
 
 import DataStructures.MyHeap;
 import Types.IntType;
+import Types.Type;
 import Values.IntValue;
 import Values.Value;
 import Exceptions.MyException;
@@ -58,5 +59,20 @@ public class ArithExp implements Exp{
     public Exp deepcopy()
     {
         return new ArithExp(op,e1.deepcopy(),e2.deepcopy());
+    }
+
+    public Type typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typ1, typ2;
+        typ1=e1.typecheck(typeEnv);
+        typ2=e2.typecheck(typeEnv);
+        if (typ1.equals(new IntType()))
+        {
+            if (typ2.equals(new IntType()))
+            {
+                return new IntType();
+            }
+            else throw new MyException("second operand is not an integer");
+        }
+        else throw new MyException("first operand is not an integer");
     }
 }

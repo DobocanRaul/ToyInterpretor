@@ -1,7 +1,9 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
 import Expressions.Exp;
 import Types.BoolType;
+import Types.Type;
 import Values.Value;
 import States.PrgState;
 import Exceptions.MyException;
@@ -36,5 +38,16 @@ public class IfStmt implements IStmt {
 
     public IStmt deepCopy() {
         return new IfStmt(exp.deepcopy(), thenS.deepCopy(), elseS.deepCopy());
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typexp=exp.typecheck(typeEnv);
+        if (typexp.equals(new BoolType())) {
+            thenS.typecheck(typeEnv.deepcopy());
+            elseS.typecheck(typeEnv.deepcopy());
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of IF has not the type bool");
     }
 }

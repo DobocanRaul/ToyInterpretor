@@ -3,6 +3,8 @@ package Expressions;
 import DataStructures.MyHeap;
 import DataStructures.MyIDictionary;
 import Exceptions.MyException;
+import Types.RefType;
+import Types.Type;
 import Values.RefValue;
 import Values.Value;
 
@@ -33,5 +35,15 @@ public class ReadHeap implements Exp{
         }
         else
             throw new MyException("Expression is not a RefValue");
+    }
+
+    public Type typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typ = exp.typecheck(typeEnv);
+        if(typ instanceof RefType){
+            RefType reft = (RefType)typ;
+            return reft.getInner();
+        }
+        else
+            throw new MyException("the rH argument is not a Ref Type");
     }
 }

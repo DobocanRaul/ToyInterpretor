@@ -1,5 +1,8 @@
 package Statements;
 
+import DataStructures.MyDictionary;
+import DataStructures.MyIDictionary;
+import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
 import Types.RefType;
@@ -61,5 +64,14 @@ public class NewStmt implements IStmt{
 
     public IStmt deepCopy(){
         return new NewStmt(varName, exp);
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typevar = typeEnv.get(varName);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("NEW stmt: right hand side and left hand side have different types ");
     }
 }

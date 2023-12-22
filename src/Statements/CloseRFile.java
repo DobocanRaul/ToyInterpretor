@@ -1,9 +1,11 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
 import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
 import Types.StringType;
+import Types.Type;
 import Values.StringValue;
 import Values.Value;
 
@@ -38,5 +40,13 @@ public class CloseRFile implements IStmt{
         }
         else throw new MyException("Expression not evaluated to string!");
         return null;
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typ = exp.typecheck(typeEnv);
+        if(typ.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("CloseRFile: exp is not a string!");
     }
 }

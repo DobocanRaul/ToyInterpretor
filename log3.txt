@@ -1,17 +1,4 @@
-ExeStack:
-(int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
+PrgState with id: 1
 ExeStack:
 int  a
 (a = 5;while((a>2)) (print(a);a = a - 1))
@@ -27,6 +14,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 (a = 5;while((a>2)) (print(a);a = a - 1))
 
@@ -42,6 +30,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 a = 5
 while((a>2)) (print(a);a = a - 1)
@@ -58,6 +47,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 while((a>2)) (print(a);a = a - 1)
 
@@ -73,6 +63,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 (print(a);a = a - 1)
 while((a>2)) (print(a);a = a - 1)
@@ -89,6 +80,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 print(a)
 a = a - 1
@@ -106,6 +98,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 a = a - 1
 while((a>2)) (print(a);a = a - 1)
@@ -122,6 +115,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 while((a>2)) (print(a);a = a - 1)
 
@@ -137,6 +131,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 (print(a);a = a - 1)
 while((a>2)) (print(a);a = a - 1)
@@ -153,6 +148,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 print(a)
 a = a - 1
@@ -170,6 +166,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 a = a - 1
 while((a>2)) (print(a);a = a - 1)
@@ -186,6 +183,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 while((a>2)) (print(a);a = a - 1)
 
@@ -201,6 +199,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 (print(a);a = a - 1)
 while((a>2)) (print(a);a = a - 1)
@@ -217,6 +216,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 print(a)
 a = a - 1
@@ -234,6 +234,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 a = a - 1
 while((a>2)) (print(a);a = a - 1)
@@ -250,6 +251,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
+PrgState with id: 1
 ExeStack:
 while((a>2)) (print(a);a = a - 1)
 
@@ -265,287 +267,7 @@ Heap:
  Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
  ------------------------------------------------------------------------------ 
 
-ExeStack:
-
-SymTable:
-a -> 2
-
-Out:
-[5, 4, 3]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-int  a
-(a = 5;while((a>2)) (print(a);a = a - 1))
-
-SymTable:
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(a = 5;while((a>2)) (print(a);a = a - 1))
-
-SymTable:
-a -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-a = 5
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 0
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 5
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(print(a);a = a - 1)
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 5
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-print(a)
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 5
-
-Out:
-[]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 5
-
-Out:
-[5]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 4
-
-Out:
-[5]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(print(a);a = a - 1)
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 4
-
-Out:
-[5]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-print(a)
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 4
-
-Out:
-[5]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 4
-
-Out:
-[5, 4]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 3
-
-Out:
-[5, 4]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-(print(a);a = a - 1)
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 3
-
-Out:
-[5, 4]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-print(a)
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 3
-
-Out:
-[5, 4]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-a = a - 1
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 3
-
-Out:
-[5, 4, 3]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
-ExeStack:
-while((a>2)) (print(a);a = a - 1)
-
-SymTable:
-a -> 2
-
-Out:
-[5, 4, 3]
-FileTable:
-
-Heap:
-
- Original Program: (int  a;(a = 5;while((a>2)) (print(a);a = a - 1)))
- ------------------------------------------------------------------------------ 
-
+PrgState with id: 1
 ExeStack:
 
 SymTable:

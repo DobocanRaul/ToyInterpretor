@@ -77,13 +77,13 @@ public class Controller {
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
     public void OneStepForAllPrg(List<PrgState> prgList){
-            prgList.forEach(prg-> {
+            /*prgList.forEach(prg-> {
                 try {
                     repo.logPrgStateExec(prg);
                 } catch (MyException e) {
                     e.printStackTrace();
                 }
-            });
+            });*/
         List<Callable<PrgState>> callList = prgList.stream()
                 .map((PrgState p) -> (Callable<PrgState>)(() -> {return p.oneStep();}))
                 .collect(Collectors.toList());

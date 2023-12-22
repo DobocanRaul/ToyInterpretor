@@ -3,6 +3,7 @@ import Commands.ExitCommand;
 import Commands.RunExample;
 import Controller.Controller;
 import DataStructures.*;
+import Exceptions.MyException;
 import Expressions.*;
 import Repository.Repository;
 import Statements.*;
@@ -62,9 +63,16 @@ public class Main {
         Repository repo4 = new Repository("log4.txt");
         Repository repo5 = new Repository("log5.txt");
 
+        try {
+            org3.typecheck(new MyDictionary<String, Type>());
+            repo3.add(prg3);
+        }
+        catch (MyException e)
+        {
+            System.out.println(e.toString());
+        }
         repo.add(prg);
         repo2.add(prg2);
-        repo3.add(prg3);
         repo4.add(prg4);
         repo5.add(prg5);
 

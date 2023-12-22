@@ -3,7 +3,9 @@ package Expressions;
 import DataStructures.MyHeap;
 import DataStructures.MyIDictionary;
 import Exceptions.MyException;
+import Types.BoolType;
 import Types.IntType;
+import Types.Type;
 import Values.BoolValue;
 import Values.IntValue;
 import Values.Value;
@@ -55,6 +57,19 @@ public class RelationalExp implements Exp{
 
     public Exp deepcopy(){
         return new RelationalExp(e1.deepcopy(),e2.deepcopy(),op);
+    }
+
+    public Type typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type t1,t2;
+        t1 = e1.typecheck(typeEnv);
+        t2 = e2.typecheck(typeEnv);
+        if(t1.equals(new IntType())){
+            if(t2.equals(new IntType())){
+                return new BoolType();
+            }
+            else throw new MyException("second operand is not an integer");
+        }
+        else throw new MyException("first operand is not an integer");
     }
 
 }

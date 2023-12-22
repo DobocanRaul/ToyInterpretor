@@ -1,7 +1,11 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
+import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
+import Types.RefType;
+import Types.Type;
 import Values.RefValue;
 import Values.Value;
 
@@ -64,5 +68,19 @@ public class WriteHeap implements IStmt{
 
     public IStmt deepCopy(){
         return new WriteHeap(varName, exp.deepcopy());
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typ = exp.typecheck(typeEnv);
+        Type typ2 = typeEnv.get(varName);
+        if(typ2 instanceof RefType)
+        {
+            if(typ.equals(((RefType) typ2).getInner()))
+                return typeEnv;
+            else
+                throw new MyException("WriteHeap: types not equal!");
+        }
+        else
+            throw new MyException("WriteHeap: variable not RefType!");
     }
 }

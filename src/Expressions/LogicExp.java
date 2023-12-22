@@ -3,6 +3,7 @@ package Expressions;
 import DataStructures.MyHeap;
 import DataStructures.MyIDictionary;
 import Exceptions.MyException;
+import Types.Type;
 import Values.Value;
 import Types.BoolType;
 public class LogicExp implements Exp{
@@ -46,5 +47,18 @@ public class LogicExp implements Exp{
 
     public Exp deepcopy(){
         return new LogicExp(e1.deepcopy(),e2.deepcopy(),op);
+    }
+
+    public Type typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type t1,t2;
+        t1 = e1.typecheck(typeEnv);
+        t2 = e2.typecheck(typeEnv);
+        if(t1.equals(new BoolType())){
+            if(t2.equals(new BoolType())){
+                return new BoolType();
+            }
+            else throw new MyException("second operand is not a boolean");
+        }
+        else throw new MyException("first operand is not a boolean");
     }
 }

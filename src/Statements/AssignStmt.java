@@ -37,5 +37,14 @@ public class AssignStmt implements IStmt {
     public IStmt deepCopy() {
         return new AssignStmt(id, exp.deepcopy());
     }
+
+    public MyIDictionary<String,Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        Type typevar = typeEnv.get(id);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(typexp))
+            return typeEnv;
+        else
+            throw new MyException("Assignment: right hand side and left hand side have different types ");
+    }
 }
 

@@ -1,8 +1,11 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
+import Exceptions.MyException;
 import Expressions.Exp;
 import States.PrgState;
 import Types.BoolType;
+import Types.Type;
 import Values.BoolValue;
 import Values.Value;
 
@@ -48,5 +51,13 @@ public class WhileStmt implements IStmt{
         return new WhileStmt(exp.deepcopy(), stmt.deepCopy());
     }
 
-
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException {
+        Type typexp=exp.typecheck(typeEnv);
+        if (typexp.equals(new BoolType())) {
+            stmt.typecheck(typeEnv.deepcopy());
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of WHILE has not the type bool");
+    }
 }

@@ -1,7 +1,10 @@
 package Statements;
 
+import DataStructures.MyIDictionary;
 import DataStructures.MyIStack;
 import States.PrgState;
+import Types.Type;
+import Exceptions.MyException;
 public class CompStmt implements IStmt {
     IStmt first, second;
 
@@ -24,5 +27,9 @@ public class CompStmt implements IStmt {
 
     public IStmt deepCopy() {
         return new CompStmt(first.deepCopy(), second.deepCopy());
+    }
+
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws MyException{
+        return second.typecheck(first.typecheck(typeEnv));
     }
 }
